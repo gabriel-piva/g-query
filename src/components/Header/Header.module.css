@@ -1,0 +1,54 @@
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 1.6rem 0;
+	box-shadow: var(--shadow25);
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: var(--full-content-size);
+		margin: 0 1.6rem;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		gap: 0.4rem;
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: var(--text);
+		user-select: none;
+
+		.icon {
+			font-size: 2.2rem;
+		}
+	}
+
+	.nav {
+		display: flex;
+		align-items: center;
+		gap: 1.8rem;
+		user-select: none;
+
+		.icon {
+			font-size: 2.2rem;
+		}
+
+		.action {
+			display: flex;
+			align-items: center;
+			color: var(--color-gray);
+			gap: 0.4rem;
+			cursor: pointer;
+
+			&:hover {
+				color: var(--main);
+				transition: all 0.2s;
+			}
+		}
+	}
+}

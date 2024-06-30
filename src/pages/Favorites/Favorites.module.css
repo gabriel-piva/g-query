@@ -1,0 +1,33 @@
+.fav_header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	gap: 1.2rem;
+	font-size: 2rem;
+	background-color: var(--main25);
+	border-radius: var(--radius3);
+	padding: 0.6rem 1.8rem;
+	box-shadow: var(--shadow25);
+
+	border: var(--border-main);
+
+	.fav_title {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+
+	.fav_share {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: none;
+		font-size: 1.8rem;
+
+		&:hover {
+			color: var(--main);
+			transition: all 0.2s;
+		}
+	}
+}

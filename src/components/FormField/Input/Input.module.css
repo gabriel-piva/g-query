@@ -1,0 +1,36 @@
+.label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	width: 100%;
+
+	.name {
+		display: flex;
+		gap: 0.3rem;
+		color: var(--text);
+		font-weight: bolder;
+		font-size: 1.4rem;
+		font-weight: 600;
+
+		.required {
+			display: flex;
+			align-items: flex-end;
+			margin-bottom: -0.2rem;
+			color: var(--color-error);
+		}
+	}
+
+	.input {
+		background: none;
+		color: var(--text);
+		padding: 1.2rem;
+		border-radius: var(--radius1);
+		box-shadow: var(--shadow25);
+		border: var(--border-main);
+		font-weight: 700;
+
+		&::-webkit-calendar-picker-indicator {
+			filter: invert(0.3);
+		}
+	}
+}

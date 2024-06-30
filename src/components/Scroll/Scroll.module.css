@@ -1,0 +1,19 @@
+.scroll_to_top {
+	position: fixed;
+	bottom: 1.8rem;
+	right: 1.8rem;
+	z-index: 5;
+
+	.scroll_button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--main);
+		border-radius: 50%;
+		width: 4.2rem;
+		height: 4.2rem;
+		font-size: 1.8rem;
+		color: var(--gray2);
+		box-shadow: var(--shadow25);
+	}
+}

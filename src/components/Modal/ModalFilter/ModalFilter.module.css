@@ -1,0 +1,11 @@
+.filter_form {
+	width: 100%;
+
+	.form_footer {
+		margin-top: 2.4rem;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.6rem;
+		width: 100%;
+	}
+}

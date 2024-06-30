@@ -1,0 +1,124 @@
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-optical-sizing: auto;
+
+	color-scheme: dark;
+
+	--back: #222629;
+	--main: #00a59e;
+	--main25: #00a59e25;
+	--text: #cec7bf;
+
+	--color-white: #f5f5f5;
+	--color-black: #161616;
+	--color-error: #b26753;
+
+	--gray1: #75756b;
+	--gray2: #201e1e;
+	--gray3: #161616;
+
+	/* Default Styles */
+	--font: "Onest", sans-serif;
+	--shadow25: 0 4px 4px #16161670;
+	--full-content-size: clamp(252px, 90%, 1024px);
+
+	--border-main: 2px solid #00a59e70;
+	--radius1: 10px;
+	--radius3: 30px;
+}
+
+[data-theme="light"] {
+	color-scheme: light;
+	--back: #f1f1f1;
+	--main: #00a59e;
+	--main25: #00a59e40;
+	--text: #222629;
+	--border-main: 2px solid #00a59e70;
+	--shadow25: 0 3px 3px #16161630;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+/* Reset */
+
+* {
+	margin: 0;
+	margin-block: 0;
+	margin-inline: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font);
+}
+a {
+	text-decoration: none;
+	color: var(--color-white);
+}
+input,
+button {
+	border: none;
+	outline: none;
+	padding-block: 0;
+	padding-inline: 0;
+}
+button {
+	color: var(--text);
+	background: none;
+	cursor: pointer;
+}
+ul,
+li {
+	list-style: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+	display: none;
+}
+input[type="number"] {
+	appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 0.8rem;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--main);
+}
+::selection {
+	background-color: var(--main25);
+	color: var(--text);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+html {
+	font-size: 62.5%;
+}
+body {
+	background: var(--back);
+	color: var(--text);
+	overflow-x: hidden;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */
+
+@media (max-width: 425px) {
+	html {
+		font-size: 50%;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - */

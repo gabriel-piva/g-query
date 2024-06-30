@@ -1,0 +1,38 @@
+.button {
+	display: flex;
+	align-items: center;
+	gap: 0.4rem;
+	font-weight: 600;
+	box-shadow: var(--shadow25);
+	padding: 0.6rem 1.2rem;
+	font-size: 1.6rem;
+	border-radius: var(--radius1);
+	color: var(--text);
+	border: 2px solid transparent;
+
+	.icon {
+		font-size: 1.8rem;
+	}
+
+	&:disabled {
+		cursor: progress;
+		opacity: 0.8;
+	}
+}
+
+/* Color Variant */
+.button.main {
+	background-color: var(--main);
+	color: var(--back);
+}
+.button.alt {
+	background: none;
+	border: var(--border-main);
+	color: var(--text);
+	font-weight: 500;
+
+	&:hover {
+		color: var(--main);
+		transition: all 0.2s;
+	}
+}

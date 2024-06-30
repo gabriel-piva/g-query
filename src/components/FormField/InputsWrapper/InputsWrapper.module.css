@@ -1,0 +1,20 @@
+.inputs {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-basis: 0;
+	gap: 1.4rem;
+	width: 100%;
+
+	label {
+		flex-grow: 1;
+		flex-basis: 0;
+		min-width: 48%;
+	}
+}
+
+@media (max-width: 760px) {
+	.inputs {
+		flex-direction: column;
+	}
+}
