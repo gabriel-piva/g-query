@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BACK_URL = import.meta.env.VITE_BACK_URL;
+const BACK_URL = process.env.BACK_URL;
 
 const http = axios.create({
 	baseURL: BACK_URL,
